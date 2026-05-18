@@ -16,8 +16,7 @@ The project focuses on delivering a clean user experience with support for:
 
 ## 🚀 Tech Stack
 
-- HTML5
-- CSS3 / Tailwind CSS
+- Tailwind CSS
 - TypeScript
 - React
 - Next.js
