@@ -68,6 +68,6 @@ The first phase includes:
 
 ---
 
-## 👨‍💻 Developed By
+## 👨‍💻 Developed & Designed By
 
-Ahmed Talaat
+Ahmed Talaat — Front-End Developer specializing in React & Next.js.
