@@ -1,0 +1,219 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "expenses": "Expenses",
+    "goals": "Goals",
+    "insights": "Insights",
+    "settings": "Settings"
+  },
+  "auth": {
+    "login": "Login",
+    "signup": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "name": "Full Name",
+    "confirmPassword": "Confirm Password",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?",
+    "loginHere": "Login here",
+    "signupHere": "Sign up here",
+    "loginButton": "Sign In",
+    "signupButton": "Create Account",
+    "welcome": "Welcome to MoneyMind",
+    "manageFinances": "Manage your finances with AI-powered insights",
+    "passwordMismatch": "Password Mismatch"
+  },
+  "dashboard": {
+    "welcome": "Welcome back,",
+    "subtitle": "Here's your financial overview",
+
+    "income": "Total Income",
+    "expenses": "Total Expenses",
+    "balance": "Balance",
+    "savingsRate": "Savings Rate",
+
+    "thisMonth": "this month",
+    "fromLastMonth": "from last month",
+    "negative": "Negative",
+    "target": "Target",
+
+    "incomeVsExpenses": "Income vs Expenses",
+    "last7Days": "Last 7 days trend",
+
+    "spendingByCategory": "Spending by Category",
+    "monthlyBreakdown": "This month's breakdown",
+
+    "financialGoals": "Financial Goals",
+    "trackGoals": "Track your progress towards goals",
+    "viewAll": "View All"
+  },
+  "expenses": {
+    "title": "Expenses",
+    "subtitle": "Track your income and expenses",
+    "expenses": "Expenses",
+    "income": "Income",
+    "totalIncome": "Total Income",
+    "totalExpenses": "Total Expenses",
+    "all": "All",
+    "addExpense": "Add Expense",
+    "cancel": "Cancel",
+    "description": "Description",
+    "amount": "Amount",
+    "type": "Type",
+    "category": "Category",
+    "date": "Date",
+    "addButton": "Add Expense",
+    "transactionHistory": "Transaction History",
+    "noTransactions": "No transactions yet",
+    "delete": "Delete",
+    "edit": "Edit",
+    "categories": {
+      "food": "Food & Dining",
+      "transport": "Transportation",
+      "entertainment": "Entertainment",
+      "utilities": "Utilities",
+      "shopping": "Shopping",
+      "health": "Health & Fitness",
+      "salary": "Salary",
+      "other": "Other"
+    }
+  },
+  "goals": {
+    "title": "Goals",
+    "addGoal": "Add Financial Goal",
+    "cancel": "Cancel",
+    "type": "Type",
+    "goalName": "Goal Name",
+    "targetAmount": "Target Amount",
+    "currentAmount": "Current Amount",
+    "deadline": "Target Date",
+    "priority": "Priority",
+    "addButton": "Create Goal",
+    "progress": "Progress",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low",
+    "noGoals": "No goals yet",
+    "edit": "Edit",
+    "delete": "Delete",
+    "daysRemaining": "days remaining",
+    "categories": {
+      "savings": "Savings",
+      "travel": "Travel",
+      "technology": "Technology",
+      "housing": "Housing",
+      "education": "Education",
+      "investment": "Investment",
+      "health": "Health",
+      "other": "Other"
+    }
+  },
+  "insights": {
+    "title": "Financial Insights",
+    "subtitle": "AI-powered recommendations based on your spending patterns",
+
+    "noInsights": "No insights available yet. Add more transactions to get personalized recommendations.",
+
+    "takeAction": "Take Action →",
+
+    "stats": {
+      "totalTransactions": "Total Transactions",
+      "activeGoals": "Active Goals",
+      "spendingCategories": "Spending Categories"
+    },
+
+    "charts": {
+      "topCategories": "Top Spending Categories",
+      "breakdown": "Category Breakdown",
+      "monthlyTrend": "6-Month Trend",
+      "incomeVsExpenses": "Income vs Expenses"
+    },
+
+    "recommendations": {
+      "title": "Smart Recommendations",
+      "subtitle": "Personalized tips to improve your finances",
+
+      "budget": {
+        "title": "💡 Create a Budget",
+        "desc": "Set monthly limits for each category to control your spending better."
+      },
+
+      "savings": {
+        "title": "🎯 Automate Savings",
+        "desc": "Set up automatic transfers after each paycheck."
+      },
+
+      "subscriptions": {
+        "title": "📉 Review Subscriptions",
+        "desc": "Check recurring monthly charges you might not use anymore."
+      }
+    },
+
+    "insightTypes": {
+      "warning": "Warning",
+      "success": "Success",
+      "info": "Info"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your profile and preferences",
+
+    "profilePicture": {
+      "title": "Profile Picture",
+      "desc": "Upload a picture to personalize your account",
+      "change": "Change Picture",
+      "hint": "JPG, PNG or GIF (max 5MB)"
+    },
+
+    "profileInfo": {
+      "title": "Profile Information",
+      "desc": "Update your personal details",
+
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "location": "Location",
+      "bio": "Bio",
+
+      "phoneHint": "Optional - help us contact you if needed",
+      "locationHint": "Optional - your city and country",
+
+      "bioPlaceholder": "Tell us about yourself...",
+      "characters": "characters"
+    },
+
+    "buttons": {
+      "save": "Save Changes",
+      "saving": "Saving...",
+      "cancel": "Cancel",
+      "changePicture": "Change Picture"
+    },
+
+    "validation": {
+      "name": "Name must be at least 2 characters",
+      "email": "Invalid email address",
+      "bio": "Must be less than 500 characters"
+    }
+  },
+  "menu": {
+    "menu": "Menu",
+    "signOut": "Sign Out",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "save": "Save",
+    "back": "Back",
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
+    "passwordMismatch": "Passwords do not match",
+    "currencySymbol": "$"
+  }
+}

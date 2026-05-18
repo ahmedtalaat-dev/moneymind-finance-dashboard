@@ -1,0 +1,219 @@
+{
+  "nav": {
+    "dashboard": "لوحة التحكم",
+    "expenses": "النفقات",
+    "goals": "الأهداف",
+    "insights": "الرؤى",
+    "settings": "الإعدادات"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "name": "الاسم الكامل",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "alreadyHaveAccount": "هل لديك حساب بالفعل؟",
+    "dontHaveAccount": "ليس لديك حساب؟",
+    "loginHere": "سجل الدخول هنا",
+    "signupHere": "أنشئ حسابًا هنا",
+    "loginButton": "تسجيل الدخول",
+    "signupButton": "إنشاء حساب",
+    "welcome": "مرحبا بك في MoneyMind",
+    "manageFinances": "إدارة أموالك برؤى مدعومة بالذكاء الاصطناعي",
+    "passwordMismatch": "كلمة المرور غير متطابقة"
+  },
+  "dashboard": {
+    "welcome": "مرحباً بعودتك يا ",
+    "subtitle": "إليك نظرة على وضعك المالي",
+
+    "income": "إجمالي الدخل",
+    "expenses": "إجمالي النفقات",
+    "balance": "الرصيد",
+    "savingsRate": "معدل الادخار",
+
+    "thisMonth": "هذا الشهر",
+    "fromLastMonth": "عن الشهر الماضي",
+    "negative": "سلبي",
+    "target": "الهدف",
+
+    "incomeVsExpenses": "الدخل مقابل النفقات",
+    "last7Days": "أداء آخر 7 أيام",
+
+    "spendingByCategory": "الإنفاق حسب الفئة",
+    "monthlyBreakdown": "تفصيل هذا الشهر",
+
+    "financialGoals": "الأهداف المالية",
+    "trackGoals": "تابع تقدمك نحو أهدافك",
+    "viewAll": "عرض الكل"
+  },
+  "expenses": {
+    "title": "النفقات",
+    "subtitle": "تتبع دخلك ومصروفاتك",
+    "expenses": "النفقات",
+    "income": "الدخل",
+    "totalIncome": "إجمالي الدخل",
+    "totalExpenses": "إجمالي النفقات",
+    "all": "الكل",
+    "addExpense": "إضافة نفقة",
+    "cancel": "إلغاء",
+    "description": "الوصف",
+    "amount": "المبلغ",
+    "type": "النوع",
+    "category": "الفئة",
+    "date": "التاريخ",
+    "addButton": "إضافة نفقة",
+    "transactionHistory": "سجل المعاملات",
+    "noTransactions": "لا توجد معاملات حتى الآن",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "categories": {
+      "food": "الطعام والمطاعم",
+      "transport": "المواصلات",
+      "entertainment": "الترفيه",
+      "utilities": "المرافق",
+      "shopping": "التسوق",
+      "health": "الصحة واللياقة",
+      "salary": "الراتب",
+      "other": "أخرى"
+    }
+  },
+  "goals": {
+    "title": "الأهداف",
+    "addGoal": "إضافة هدف مالي",
+    "cancel": "إلغاء",
+    "type": "النوع",
+    "goalName": "اسم الهدف",
+    "targetAmount": "المبلغ المستهدف",
+    "currentAmount": "المبلغ الحالي",
+    "deadline": "تاريخ الاستحقاق",
+    "priority": "الأولوية",
+    "addButton": "إنشاء هدف",
+    "progress": "التقدم",
+    "high": "عالي",
+    "medium": "متوسط",
+    "low": "منخفض",
+    "noGoals": "لا توجد أهداف حتى الآن",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "daysRemaining": "أيام متبقية",
+    "categories": {
+      "savings": "الادخار",
+      "travel": "السفر",
+      "technology": "التكنولوجيا",
+      "housing": "السكن",
+      "education": "التعليم",
+      "investment": "الاستثمار",
+      "health": "الصحة",
+      "other": "أخرى"
+    }
+  },
+  "insights": {
+    "title": "الرؤى المالية",
+    "subtitle": "توصيات ذكية بناءً على أنماط إنفاقك",
+
+    "noInsights": "لا توجد رؤى حالياً. أضف معاملات أكثر للحصول على توصيات مخصصة.",
+
+    "takeAction": "اتخذ إجراء →",
+
+    "stats": {
+      "totalTransactions": "إجمالي المعاملات",
+      "activeGoals": "الأهداف النشطة",
+      "spendingCategories": "فئات الإنفاق"
+    },
+
+    "charts": {
+      "topCategories": "أعلى فئات الإنفاق",
+      "breakdown": "توزيع حسب الفئة",
+      "monthlyTrend": "اتجاه 6 أشهر",
+      "incomeVsExpenses": "الدخل مقابل المصروفات"
+    },
+
+    "recommendations": {
+      "title": "توصيات ذكية",
+      "subtitle": "نصائح مخصصة لتحسين وضعك المالي",
+
+      "budget": {
+        "title": "💡 إنشاء ميزانية",
+        "desc": "حدد حدود شهرية لكل فئة للتحكم في مصاريفك بشكل أفضل."
+      },
+
+      "savings": {
+        "title": "🎯 تفعيل الادخار التلقائي",
+        "desc": "قم بتحويل جزء من دخلك تلقائياً بعد كل راتب."
+      },
+
+      "subscriptions": {
+        "title": "📉 مراجعة الاشتراكات",
+        "desc": "تحقق من الاشتراكات الشهرية التي قد لا تستخدمها."
+      }
+    },
+
+    "insightTypes": {
+      "warning": "تحذير",
+      "success": "نجاح",
+      "info": "معلومة"
+    }
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "subtitle": "إدارة ملفك الشخصي وتفضيلاتك",
+
+    "profilePicture": {
+      "title": "الصورة الشخصية",
+      "desc": "قم برفع صورة لتخصيص حسابك",
+      "change": "تغيير الصورة",
+      "hint": "JPG أو PNG أو GIF (بحد أقصى 5MB)"
+    },
+
+    "profileInfo": {
+      "title": "معلومات الملف الشخصي",
+      "desc": "تحديث بياناتك الشخصية",
+
+      "name": "الاسم الكامل",
+      "email": "البريد الإلكتروني",
+      "phone": "رقم الهاتف",
+      "location": "الموقع",
+      "bio": "نبذة عنك",
+
+      "phoneHint": "اختياري - للتواصل عند الحاجة",
+      "locationHint": "اختياري - مدينتك ودولتك",
+
+      "bioPlaceholder": "اكتب نبذة عن نفسك...",
+      "characters": "عدد الحروف"
+    },
+
+    "buttons": {
+      "save": "حفظ التغييرات",
+      "saving": "جارٍ الحفظ...",
+      "cancel": "إلغاء",
+      "changePicture": "تغيير الصورة"
+    },
+
+    "validation": {
+      "name": "يجب أن يكون الاسم على الأقل حرفين",
+      "email": "البريد الإلكتروني غير صالح",
+      "bio": "يجب أن يكون أقل من 500 حرف"
+    }
+  },
+  "menu": {
+    "menu": "القائمة",
+    "signOut": "تسجيل الخروج",
+    "profile": "الملف الشخصي",
+    "logout": "تسجيل الخروج"
+  },
+  "common": {
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ ما",
+    "success": "نجح",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "save": "حفظ",
+    "back": "رجوع",
+    "required": "هذا الحقل مطلوب",
+    "invalidEmail": "عنوان بريد إلكتروني غير صحيح",
+    "passwordMismatch": "كلمات المرور غير متطابقة",
+    "currencySymbol": "﷼"
+  }
+}
