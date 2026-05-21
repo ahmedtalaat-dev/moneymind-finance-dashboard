@@ -45,7 +45,8 @@
 
     "financialGoals": "الأهداف المالية",
     "trackGoals": "تابع تقدمك نحو أهدافك",
-    "viewAll": "عرض الكل"
+    "viewAll": "عرض الكل",
+    "recentTransactions": "المعاملات الأخيرة"
   },
   "expenses": {
     "title": "النفقات",
@@ -153,7 +154,8 @@
       "warning": "تحذير",
       "success": "نجاح",
       "info": "معلومة"
-    }
+    },
+    "aiRecommendations": "توصيات الذكاء الاصطناعي"
   },
   "settings": {
     "title": "الإعدادات",
