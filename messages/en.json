@@ -45,7 +45,8 @@
 
     "financialGoals": "Financial Goals",
     "trackGoals": "Track your progress towards goals",
-    "viewAll": "View All"
+    "viewAll": "View All",
+    "recentTransactions": "Recent Transactions"
   },
   "expenses": {
     "title": "Expenses",
@@ -153,7 +154,8 @@
       "warning": "Warning",
       "success": "Success",
       "info": "Info"
-    }
+    },
+    "aiRecommendations": "AI Recommendations"
   },
   "settings": {
     "title": "Settings",
