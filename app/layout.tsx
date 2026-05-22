@@ -9,15 +9,14 @@ export const metadata: Metadata = {
   title: 'MoneyMind - Smart Financial Dashboard',
   description:
     'Manage your finances with AI-powered insights, expense tracking, and goal setting',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/icon.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/icon.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
