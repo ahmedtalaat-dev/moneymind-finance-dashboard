@@ -1,56 +1,51 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { useAuth } from '@/context/auth-context'
+import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useAuth } from "@/context/auth-context";
 
-import { Button } from '@/components/ui/button'
-import {
-  Avatar,
-  AvatarImage,
-  AvatarFallback,
-} from '@/components/ui/avatar'
+import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
-import { ThemeToggle } from '@/components/theme-toggle'
+import { ThemeToggle } from "@/components/theme-toggle";
 
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
+} from "@/components/ui/dropdown-menu";
 
-import { cn } from '@/lib/utils'
+import { cn } from "@/lib/utils";
 
 export function Navbar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const pathname = usePathname()
+  const pathname = usePathname();
 
-  const { user, isAuthenticated, logout } = useAuth()
+  const { user, isAuthenticated, logout } = useAuth();
 
   const navLinks = isAuthenticated
     ? [
-        { href: '/dashboard', label: 'Dashboard' },
-        { href: '/dashboard/expenses', label: 'Expenses' },
-        { href: '/dashboard/goals', label: 'Goals' },
-        { href: '/dashboard/insights', label: 'Insights' },
+        { href: "/dashboard", label: "Dashboard" },
+        { href: "/dashboard/expenses", label: "Expenses" },
+        { href: "/dashboard/goals", label: "Goals" },
+        { href: "/dashboard/insights", label: "Insights" },
       ]
     : [
-        { href: '/auth/login', label: 'Login' },
-        { href: '/auth/signup', label: 'Sign Up' },
-      ]
+        { href: "/auth/login", label: "Login" },
+        { href: "/auth/signup", label: "Sign Up" },
+      ];
 
   const isActive = (href: string) => {
-    return pathname === href
-  }
+    return pathname === href;
+  };
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-
           {/* Logo */}
           <div className="flex items-center gap-2">
             <Link
@@ -61,9 +56,7 @@ export function Navbar() {
                 💰
               </div>
 
-              <span className="hidden sm:inline">
-                MoneyMind
-              </span>
+              <span className="hidden sm:inline">MoneyMind</span>
             </Link>
           </div>
 
@@ -74,10 +67,10 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  'px-3 py-2 rounded-md text-sm font-medium transition-colors',
+                  "px-3 py-2 rounded-md text-sm font-medium transition-colors",
                   isActive(link.href)
-                    ? 'bg-primary/10 text-primary'
-                    : 'text-foreground hover:bg-muted'
+                    ? "bg-primary/10 text-primary"
+                    : "text-foreground hover:bg-muted",
                 )}
               >
                 {link.label}
@@ -97,10 +90,7 @@ export function Navbar() {
                     className="relative w-10 h-10 rounded-full p-0"
                   >
                     <Avatar className="w-10 h-10">
-                      <AvatarImage
-                        src={user.avatar}
-                        alt={user.name}
-                      />
+                      <AvatarImage src={user.avatar} alt={user.name} />
 
                       <AvatarFallback>
                         {user.name.substring(0, 2).toUpperCase()}
@@ -109,14 +99,9 @@ export function Navbar() {
                   </Button>
                 </DropdownMenuTrigger>
 
-                <DropdownMenuContent
-                  align="end"
-                  className="w-56"
-                >
+                <DropdownMenuContent align="end" className="w-56">
                   <div className="px-2 py-1.5 text-sm">
-                    <p className="font-semibold">
-                      {user.name}
-                    </p>
+                    <p className="font-semibold">{user.name}</p>
 
                     <p className="text-xs text-muted-foreground">
                       {user.email}
@@ -126,9 +111,7 @@ export function Navbar() {
                   <div className="border-t border-border my-1" />
 
                   <DropdownMenuItem asChild>
-                    <Link href="/dashboard/settings">
-                      Settings
-                    </Link>
+                    <Link href="/dashboard/settings">Settings</Link>
                   </DropdownMenuItem>
 
                   <DropdownMenuItem
@@ -143,12 +126,11 @@ export function Navbar() {
 
             {/* Mobile Button */}
             <Button
+              aria-label="Open menu"
               variant="ghost"
               className="md:hidden"
               size="sm"
-              onClick={() =>
-                setMobileMenuOpen(!mobileMenuOpen)
-              }
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <svg
                 className="w-5 h-5"
@@ -162,8 +144,8 @@ export function Navbar() {
                   strokeWidth={2}
                   d={
                     mobileMenuOpen
-                      ? 'M6 18L18 6M6 6l12 12'
-                      : 'M4 6h16M4 12h16M4 18h16'
+                      ? "M6 18L18 6M6 6l12 12"
+                      : "M4 6h16M4 12h16M4 18h16"
                   }
                 />
               </svg>
@@ -179,10 +161,10 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  'block px-3 py-2 rounded-md text-base font-medium transition-colors',
+                  "block px-3 py-2 rounded-md text-base font-medium transition-colors",
                   isActive(link.href)
-                    ? 'bg-primary/10 text-primary'
-                    : 'text-foreground hover:bg-muted'
+                    ? "bg-primary/10 text-primary"
+                    : "text-foreground hover:bg-muted",
                 )}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -193,5 +175,5 @@ export function Navbar() {
         )}
       </div>
     </nav>
-  )
+  );
 }
