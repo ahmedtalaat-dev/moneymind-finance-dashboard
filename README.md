@@ -20,7 +20,6 @@ The project focuses on delivering a clean user experience with support for:
 - React
 - Next.js
 - Chart Libraries
-- i18n for multi-language support
 
 ---
 
@@ -34,9 +33,6 @@ Add, edit, delete, and categorize expenses easily.
 
 ### 📊 Analytics Dashboard
 Visualize spending habits with charts and statistics.
-
-### 🌍 Multi-language Support
-Supports both Arabic and English with RTL support.
 
 ### 🌗 Theme Switching
 Toggle between Dark Mode and Light Mode smoothly.
