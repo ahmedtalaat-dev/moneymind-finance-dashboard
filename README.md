@@ -5,7 +5,6 @@ MoneyMind is a modern personal finance dashboard that helps users manage their s
 The project focuses on delivering a clean user experience with support for:
 
 - 🌙 Dark & Light Mode
-- 🌍 Arabic & English Languages
 - 📊 Expense & Salary Tracking
 - 💰 Budget Management
 - 📈 Financial Insights & Analytics
