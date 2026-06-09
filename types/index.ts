@@ -59,4 +59,30 @@ export interface DashboardStats {
 export interface Feature {
   title: string;
   text: string;
-};
+}
+
+export interface StatCardProps {
+  title: string
+  value: string | number
+  description?: string
+  icon?: React.ReactNode
+  trend?: 'up' | 'down' | 'stable'
+  trendValue?: string
+  className?: string
+}
+
+export interface Stats {
+  totalIncome: number;
+  totalExpenses: number;
+  balance: number;
+  savings: number;
+}
+
+type Trend = "up" | "down" | "stable";
+export interface StatItem {
+  title: string;
+  value: string;
+  icon: string;
+  trend: Trend;
+  trendValue: string;
+}

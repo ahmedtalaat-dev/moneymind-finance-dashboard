@@ -3,7 +3,7 @@
 import { useMemo } from 'react'
 import { useFinance } from '@/context/index'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { StatCard } from '@/components/stat-card'
+import { StatCard } from '@/components/StatCard'
 import {
   PieChart,
   Pie,

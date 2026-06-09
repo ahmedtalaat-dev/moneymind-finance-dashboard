@@ -1,29 +1,33 @@
-'use client'
+"use client";
 
-import { useAuth } from '@/context/auth-context'
-import { useRouter } from 'next/navigation'
-import { useEffect, useState } from 'react'
-import { Sidebar } from '@/components/sidebar'
+// Imports
+import { useAuth } from "@/context/auth-context";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { Sidebar } from "@/components/Sidebar";
 
 export default function DashboardLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  const { isAuthenticated, isLoading } = useAuth()
-  const router = useRouter()
-  const [mounted, setMounted] = useState(false)
+  const { isAuthenticated, isLoading } = useAuth();
+  const router = useRouter();
+  const [mounted, setMounted] = useState(false);
 
+  // Mark component as mounted
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
+  // Redirect unauthenticated users
   useEffect(() => {
     if (mounted && !isLoading && !isAuthenticated) {
-      router.push('/auth/login')
+      router.push("/");
     }
-  }, [isAuthenticated, isLoading, router, mounted])
+  }, [isAuthenticated, isLoading, router, mounted]);
 
+  // loader
   if (!mounted || isLoading || !isAuthenticated) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -32,17 +36,18 @@ export default function DashboardLayout({
           <p className="text-muted-foreground">Loading...</p>
         </div>
       </div>
-    )
+    );
   }
 
   return (
     <div className="flex h-screen">
+      {/* Desktop sidebar */}
       <div className="w-64 hidden md:flex">
         <Sidebar />
       </div>
-      <main className="flex-1 overflow-auto">
-        {children}
-      </main>
+
+      {/* Main content */}
+      <main className="flex-1 overflow-auto">{children}</main>
     </div>
-  )
+  );
 }
