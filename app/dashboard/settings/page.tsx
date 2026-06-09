@@ -116,7 +116,7 @@ export default function SettingsPage() {
           <div>
             <label htmlFor="avatar-upload">
               <Button onClick={handleChangeAvatar} variant="outline">
-                Change Avatar
+                Change Picture
               </Button>
             </label>
 
