@@ -55,3 +55,8 @@ export interface DashboardStats {
   savings: number
   goalsCompleted: number
 }
+
+export interface Feature {
+  title: string;
+  text: string;
+};
