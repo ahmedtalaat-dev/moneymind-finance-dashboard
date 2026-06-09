@@ -1,101 +1,136 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import Link from 'next/link'
-import { useRouter } from 'next/navigation'
-import { useAuth } from '@/context/auth-context'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
+// Imports
+import { useRouter } from "next/navigation";
+import { useForm } from "react-hook-form";
+import Link from "next/link";
+import { useAuth } from "@/context/auth-context";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card'
-import { FieldGroup, Field, FieldLabel } from '@/components/ui/field'
+} from "@/components/ui/card";
+import { FieldGroup, Field, FieldLabel } from "@/components/ui/field";
 
+// Form type definition
+type LoginFormData = {
+  email: string;
+  password: string;
+};
+
+// Main Page
 export default function LoginPage() {
-  const router = useRouter()
-  const { login } = useAuth()
+  const router = useRouter();
+  const { login } = useAuth();
 
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [isLoading, setIsLoading] = useState(false)
-  const [error, setError] = useState('')
+  // React Hook Form setup
+  const {
+    register,
+    handleSubmit,
+    setError,
+    formState: { errors, isSubmitting },
+  } = useForm<LoginFormData>({
+    defaultValues: {
+      email: "",
+      password: "",
+    },
+  });
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsLoading(true)
-    setError('')
-
+  // Handle form submit
+  const onSubmit = async (data: LoginFormData) => {
     try {
-      await login(email, password)
-      router.push('/dashboard')
+      await login(data.email, data.password);
+      router.push("/dashboard");
     } catch (err) {
-      setError('Invalid email or password')
-    } finally {
-      setIsLoading(false)
+      setError("root", {
+        message: "Invalid email or password",
+      });
     }
-  }
+  };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted p-4">
-
       <Card className="w-full max-w-md">
-
-        <CardHeader className="space-y-1">
-          <CardTitle className="text-2xl">
-            Welcome back
-          </CardTitle>
-          <CardDescription>
-            Sign in to manage your finances
-          </CardDescription>
+        {/* Header section */}
+        <CardHeader className="space-y-1 text-center">
+          <CardTitle className="text-2xl">Welcome back</CardTitle>
+          <CardDescription>Sign in to manage your finances</CardDescription>
         </CardHeader>
 
+        {/* Content section */}
         <CardContent>
-          <form onSubmit={handleSubmit} className="space-y-4">
-
+          {/* Login form */}
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+            {/* Email field */}
             <FieldGroup>
               <Field>
                 <FieldLabel>Email</FieldLabel>
                 <Input
                   type="email"
                   placeholder="you@example.com"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
+                  autoComplete="email"
+                  disabled={isSubmitting}
+                  {...register("email", {
+                    required: "Email is required",
+                    pattern: {
+                      value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                      message: "Invalid email format",
+                    },
+                  })}
                 />
+                {/* Email error */}
+                {errors.email && (
+                  <p className="text-sm text-destructive">
+                    {errors.email.message}
+                  </p>
+                )}
               </Field>
             </FieldGroup>
 
+            {/* Password field */}
             <FieldGroup>
               <Field>
                 <FieldLabel>Password</FieldLabel>
                 <Input
                   type="password"
                   placeholder="••••••••"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  required
+                  autoComplete="current-password"
+                  disabled={isSubmitting}
+                  {...register("password", {
+                    required: "Password is required",
+                    minLength: {
+                      value: 8,
+                      message: "Password must be at least 8 characters",
+                    },
+                  })}
                 />
+                {/* Password error */}
+                {errors.password && (
+                  <p className="text-sm text-destructive">
+                    {errors.password.message}
+                  </p>
+                )}
               </Field>
             </FieldGroup>
 
-            {error && (
-              <p className="text-sm text-destructive">
-                {error}
-              </p>
+            {/* Global error message */}
+            {errors.root && (
+              <p className="text-sm text-destructive">{errors.root.message}</p>
             )}
 
-            <Button type="submit" className="w-full" disabled={isLoading}>
-              {isLoading ? 'Signing in...' : 'Sign in'}
+            {/* Submit button */}
+            <Button type="submit" className="w-full" disabled={isSubmitting}>
+              {isSubmitting ? "Signing in..." : "Sign in"}
             </Button>
-
           </form>
 
+          {/* Signup link */}
           <div className="mt-4 text-center text-sm">
-            Don’t have an account?{' '}
+            Don’t have an account?{" "}
             <Link
               href="/auth/signup"
               className="text-primary hover:underline font-medium"
@@ -103,10 +138,8 @@ export default function LoginPage() {
               Sign up
             </Link>
           </div>
-
         </CardContent>
       </Card>
-
     </div>
-  )
+  );
 }
