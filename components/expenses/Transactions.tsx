@@ -87,6 +87,7 @@ export default function Transactions() {
         <Button
           variant={filter === "all" ? "default" : "outline"}
           onClick={() => setFilter("all")}
+          className={`{filter == "all"? hover:"" : hover:text-white}`}
         >
           All
         </Button>
@@ -94,6 +95,7 @@ export default function Transactions() {
         <Button
           variant={filter === "income" ? "default" : "outline"}
           onClick={() => setFilter("income")}
+          className={`{filter == "income"? hover:"" : hover:text-white}`}
         >
           Income
         </Button>
@@ -101,6 +103,7 @@ export default function Transactions() {
         <Button
           variant={filter === "expense" ? "default" : "outline"}
           onClick={() => setFilter("expense")}
+          className={`{filter == "expense"? hover:"" : hover:text-white}`}
         >
           Expenses
         </Button>

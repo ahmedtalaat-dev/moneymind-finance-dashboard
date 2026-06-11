@@ -186,7 +186,7 @@ export default function ExpenseForm({ onClose }: ExpenseFormProps) {
               type="button"
               variant="outline"
               onClick={onClose}
-              className="flex-1"
+              className="flex-1 hover:text-white"
             >
               Cancel
             </Button>

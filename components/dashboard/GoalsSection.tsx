@@ -25,7 +25,7 @@ export function GoalsSection({ goals }: { goals: Goal[] }) {
 
         {/* Link to full goals page */}
         <Link href="/dashboard/goals">
-          <Button variant="outline" size="sm">
+          <Button className="hover:text-white" variant="outline" size="sm">
             View All
           </Button>
         </Link>

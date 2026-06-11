@@ -110,6 +110,7 @@ export default function TransactionHistory({
                   variant="outline"
                   disabled={currentPage === 1}
                   onClick={() => setCurrentPage((prev) => prev - 1)}
+                  className="hover:text-white"
                 >
                   Previous
                 </Button>
@@ -122,6 +123,7 @@ export default function TransactionHistory({
                   variant="outline"
                   disabled={currentPage === totalPages}
                   onClick={() => setCurrentPage((prev) => prev + 1)}
+                  className="hover:text-white"
                 >
                   Next
                 </Button>

@@ -64,7 +64,7 @@ export function Sidebar() {
             <Link key={item.href} href={item.href}>
               <Button
                 variant={isActive ? "default" : "ghost"}
-                className="w-full justify-start gap-3 text-base"
+                className={`w-full justify-start gap-3 text-base ${!isActive ? "hover:text-white" : ""}`}
               >
                 {/* Navigation icon */}
                 <span className="text-lg">{item.icon}</span>
@@ -105,7 +105,7 @@ export function Sidebar() {
         <DropdownMenu>
           {/* Dropdown trigger button */}
           <DropdownMenuTrigger asChild>
-            <Button variant="outline" className="w-full">
+            <Button variant="outline" className="w-full hover:text-white">
               Menu
             </Button>
           </DropdownMenuTrigger>
