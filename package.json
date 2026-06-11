@@ -1,5 +1,7 @@
 {
-  "name": "my-project",
+  "name": "moneymind",
+  "description": "Personal finance dashboard built with Next.js",
+  "author": "Ahmed Talaat",
   "version": "0.1.0",
   "private": true,
   "scripts": {
