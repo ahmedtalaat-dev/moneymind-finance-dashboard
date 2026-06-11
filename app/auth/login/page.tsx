@@ -15,12 +15,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { FieldGroup, Field, FieldLabel } from "@/components/ui/field";
-
-// Form type definition
-type LoginFormData = {
-  email: string;
-  password: string;
-};
+import { LoginFormData } from "@/types";
 
 // Main Page
 export default function LoginPage() {

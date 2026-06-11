@@ -15,14 +15,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { FieldGroup, Field, FieldLabel } from "@/components/ui/field";
-
-// Form type
-type SignupFormData = {
-  name: string;
-  email: string;
-  password: string;
-  confirmPassword: string;
-};
+import { SignupFormData } from "@/types";
 
 // Main Page
 export default function SignupPage() {
