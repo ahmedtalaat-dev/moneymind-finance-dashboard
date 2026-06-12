@@ -1,68 +1,129 @@
-# 💸 MoneyMind
+# 💰 MoneyMind - Personal Finance Dashboard
 
-MoneyMind is a modern personal finance dashboard that helps users manage their salary, expenses, savings, and financial goals in a simple and smart way.
+A modern personal finance dashboard built to help users track income, expenses, budgets, and financial goals through a clean and interactive user experience.
 
-The project focuses on delivering a clean user experience with support for:
-
-- 🌙 Dark & Light Mode
-- 📊 Expense & Salary Tracking
-- 💰 Budget Management
-- 📈 Financial Insights & Analytics
-- 📱 Responsive Design
-- ⚡ Fast & Modern UI
+MoneyMind focuses on modern frontend architecture, reusable components, and a smooth user interface.
 
 ---
 
-## 🚀 Tech Stack
+## 🚀 Features
 
-- Tailwind CSS
+✨ **Dashboard Overview**
+- View financial summary
+- Track income, expenses, balance, and savings
+- Interactive financial statistics
+
+💸 **Transaction Management**
+- Add income and expenses
+- Delete transactions
+- Organize transactions by categories
+
+🎯 **Goals Tracking**
+- Create saving goals
+- Track progress
+- Manage goal status and priorities
+
+📊 **Financial Insights**
+- Spending analysis
+- Category breakdown
+- Monthly trends visualization
+
+👤 **Profile Settings**
+- Update user information
+- Generate random avatars
+
+🌙 **Theme Support**
+- Dark / Light mode
+
+📱 **Responsive Design**
+- Fully optimized for desktop, tablet, and mobile
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- Next.js (App Router)
+- React 19
 - TypeScript
-- React
-- Next.js
-- Chart Libraries
+- Tailwind CSS
+
+### UI & Components
+- Shadcn UI
+- Radix UI
+- Lucide React Icons
+
+### Forms & Validation
+- React Hook Form
+- Zod
+
+### Animation & Visualization
+- Framer Motion
+- Recharts
+
+### Utilities
+- Next Themes
+- date-fns
 
 ---
 
-## 🎯 Main Features
+## 📂 Project Structure
 
-### 💵 Salary Management
-Track monthly income and manage salary sources.
 
-### 🧾 Expense Tracking
-Add, edit, delete, and categorize expenses easily.
+src/
+│
+├── app/
+│ ├── dashboard/
+│ ├── settings/
+│ ├── insights/
+│ └── data/
+│
+├── components/
+│ ├── dashboard/
+│ ├── goals/
+│ ├── insights/
+│ └── ui/
+│
+├── context/
+│ ├── auth-context.tsx
+│ └── finance-context.tsx
+│
+├── types/
+│ └── index.ts
+│
+└── utils/
 
-### 📊 Analytics Dashboard
-Visualize spending habits with charts and statistics.
-
-### 🌗 Theme Switching
-Toggle between Dark Mode and Light Mode smoothly.
-
-### 📱 Responsive UI
-Works perfectly on desktop, tablet, and mobile devices.
-
----
-
-## 📂 Project Status
-
-🚧 Currently under development.
-
-The first phase includes:
-- Project setup
-- Installing dependencies
-- Theme system
-- Color variables
-- Language configuration
 
 ---
 
-## 📸 Future Improvements
-- Authentication System
-- AI Financial Insights
-- Export Reports
-- Notifications & Reminders
+🧠 What I Learned
+
+Through building MoneyMind, I improved my experience with:
+
+- Building scalable React architecture
+- Creating reusable components
+- Managing global state with Context API
+- Type-safe development with TypeScript
+- Building responsive interfaces
+- Creating data visualization dashboards
 
 ---
 
-## 👨‍💻 Developed & Designed By
+## 🔮 Future Improvements
+- Firebase authentication
+- Real database integration
+- Cloud data synchronization
+- Advanced financial analytics
+- Export financial reports
+- AI-powered spending recommendations
 
-Ahmed Talaat — Front-End Developer specializing in React & Next.js.
+---
+
+## 👨‍💻 Author
+
+Ahmed Talaat
+Frontend Developer
+
+GitHub: https://github.com/ahmedtalaat-dev
+
+LinkedIn: https://www.linkedin.com/in/ahmedtalaat-dev
