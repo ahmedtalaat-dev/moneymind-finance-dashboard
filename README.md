@@ -69,30 +69,38 @@ MoneyMind focuses on modern frontend architecture, reusable components, and a sm
 
 ## 📂 Project Structure
 
-
-src/
+```text
+MoneyMind/
 │
 ├── app/
-│ ├── dashboard/
-│ ├── settings/
-│ ├── insights/
-│ └── data/
+│   │
+│   ├── dashboard/
+│   │   ├── page.tsx
+│   │   ├── expenses/
+│   │   ├── goals/
+│   │   └── settings/
+│   │
+│   └── auth/
+│       ├── login/
+│       └── signup/
 │
 ├── components/
-│ ├── dashboard/
-│ ├── goals/
-│ ├── insights/
-│ └── ui/
+│   ├── dashboard/
+│   ├── expenses/
+│   ├── goals/
+│   ├── settings/
+│   └── ui/
 │
 ├── context/
-│ ├── auth-context.tsx
-│ └── finance-context.tsx
+│   ├── auth-context.tsx
+│   └── finance-context.tsx
 │
-├── types/
-│ └── index.ts
+├── data/
+│   └── finance-mock.ts
 │
-└── utils/
-
+└── types/
+    └── index.ts
+```
 
 ---
 
