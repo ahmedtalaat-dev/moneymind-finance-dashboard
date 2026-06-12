@@ -104,7 +104,7 @@ MoneyMind/
 
 ---
 
-🧠 What I Learned
+## 🧠 What I Learned
 
 Through building MoneyMind, I improved my experience with:
 
@@ -129,9 +129,7 @@ Through building MoneyMind, I improved my experience with:
 
 ## 👨‍💻 Author
 
-Ahmed Talaat
-Frontend Developer
+**Ahmed Talaat** | Frontend Developer
 
-GitHub: https://github.com/ahmedtalaat-dev
+[LinkedIn](https://www.linkedin.com/in/ahmedtalaat-dev) • [GitHub](https://github.com/ahmedtalaat-dev) • [Codeforces](https://codeforces.com/profile/ahmedtalaat-dev)
 
-LinkedIn: https://www.linkedin.com/in/ahmedtalaat-dev
