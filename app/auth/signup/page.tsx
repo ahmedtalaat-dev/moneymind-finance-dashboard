@@ -16,18 +16,6 @@ import {
 } from "@/components/ui/card";
 import { FieldGroup, Field, FieldLabel } from "@/components/ui/field";
 import { SignupFormData } from "@/types";
-import type { Metadata } from "next";
-
-// Metadata
-export const metadata: Metadata = {
-  title: "Sign Up | MoneyMind",
-  description:
-    "Create a MoneyMind account and start tracking your finances, expenses, and savings goals.",
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
 
 // Main Page
 export default function SignupPage() {
