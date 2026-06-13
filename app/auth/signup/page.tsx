@@ -17,7 +17,6 @@ import {
 import { FieldGroup, Field, FieldLabel } from "@/components/ui/field";
 import { SignupFormData } from "@/types";
 import type { Metadata } from "next";
-import RegisterClient from "@/components/auth/RegisterClient";
 
 // Metadata
 export const metadata: Metadata = {
