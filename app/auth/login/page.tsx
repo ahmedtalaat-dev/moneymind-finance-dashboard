@@ -16,12 +16,6 @@ import {
 } from "@/components/ui/card";
 import { FieldGroup, Field, FieldLabel } from "@/components/ui/field";
 import { LoginFormData } from "@/types";
-import type { Metadata } from "next";
-
-// Metadata
-export const metadata: Metadata = {
-  title: "Login | MoneyMind",
-};
 
 // Main Page
 export default function LoginPage() {
