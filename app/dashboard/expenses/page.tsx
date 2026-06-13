@@ -1,6 +1,11 @@
 // Imports
-import ExpenseSection from '@/components/expenses/ExpenseSection'
-import Transactions from '@/components/expenses/Transactions'
+import type { Metadata } from "next";
+import ExpenseSection from "@/components/expenses/ExpenseSection";
+import Transactions from "@/components/expenses/Transactions";
+
+export const metadata: Metadata = {
+  title: "Expenses | MoneyMind",
+};
 
 export default function ExpensesPage() {
   return (
