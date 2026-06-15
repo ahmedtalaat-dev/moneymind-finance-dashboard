@@ -1,5 +1,18 @@
 # 💰 MoneyMind - Personal Finance Dashboard
 
+> **Notice**
+>
+> This repository is a personal portfolio project created and maintained by **Ahmed Talaat**.
+>
+> The source code is published for demonstration and portfolio purposes only. You may view the code to learn from the implementation, but you are not permitted to copy, modify, redistribute, reuse, or create derivative works from this project without explicit written permission from the author.
+>
+> Unauthorized use of this code, in whole or in part, is prohibited.
+>
+
+---
+
+A modern personal finance dashboard built to help users track income, expenses, budgets, and financial goals through a clean and interactive user experience.
+
 A modern personal finance dashboard built to help users track income, expenses, budgets, and financial goals through a clean and interactive user experience.
 
 MoneyMind focuses on modern frontend architecture, reusable components, and a smooth user interface.
