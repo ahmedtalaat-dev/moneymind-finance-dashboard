@@ -89,6 +89,7 @@ MoneyMind/
 │   ├── expenses/
 │   ├── goals/
 │   ├── settings/
+│   ├── auth/
 │   └── ui/
 │
 ├── context/
