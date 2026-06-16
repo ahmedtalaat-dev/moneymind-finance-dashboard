@@ -66,7 +66,7 @@ export default function ClientLogin() {
                 <FieldLabel>Email</FieldLabel>
                 <Input
                   type="email"
-                  placeholder="you@example.com"
+                  placeholder="ahmed@gmail.com"
                   autoComplete="email"
                   disabled={isSubmitting}
                   {...register("email", {
