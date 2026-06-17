@@ -127,7 +127,6 @@ export default function Home() {
               whileHover={{
                 y: -8,
                 scale: 1.03,
-                borderColor: "hsl(var(--primary))",
               }}
               whileTap={{
                 scale: 0.98,
@@ -136,7 +135,7 @@ export default function Home() {
                 type: "spring",
                 stiffness: 300,
               }}
-              className="p-6 rounded-lg bg-card border border-border cursor-pointer"
+              className="p-6 rounded-lg bg-card border border-border cursor-pointer hover:border-primary"
             >
               <h3 className="font-semibold text-lg mb-2">{feature.title}</h3>
 
